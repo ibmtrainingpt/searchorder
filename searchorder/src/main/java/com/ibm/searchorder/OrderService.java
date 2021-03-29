@@ -11,7 +11,7 @@ import com.ibm.searchorder.repo.OrderRepository;
 @Service
 public class OrderService {
 	@Autowired
-	OrderRepository orderRepository;
+	OrderRepository orderRepository;	//DI
 
 	public List<Order> getOrders() {
 		return orderRepository.findAll();
